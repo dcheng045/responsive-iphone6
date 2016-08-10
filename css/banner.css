@@ -1,0 +1,24 @@
+/* CSS Document */
+*{margin:0;padding:0;}
+ul,ol{list-style:none outside;}
+img{border:0 none;vertical-align:top;}
+table{border-collapse:collapse;border-spacing:0;}
+body{font:12px/1.5 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;}
+h1,h2,h3,h4,h5,h6{font-size:14px;}
+a:link, a:visited{text-decoration:none;}
+a:hover, a:focus, a:active{text-decoration:underline;}
+a:focus, a:active{outline:none;}
+.lft{float:left;display:inline;}
+.rgt{float:right;display:inline;}
+.clearfix:after{visibility:hidden;display:block;font-size:1px;content:" ";clear:both;height:0;}
+*html .clearfix{zoom:1;} /* IE6 */
+*:first-child+html .clearfix{zoom:1;}
+/*----------- 图片banner特效左右滚动 ------------*/
+/* w_ctr */
+.w_ctr .JQ-slide{width:375px;height:150px;overflow:hidden;position:relative;}
+.w_ctr .JQ-slide-content{position:absolute;}/*必须要的元素*/
+.w_ctr .JQ-slide-content li{width:375px;height:150px;float:left;display:inline;position:relative;}
+.w_ctr .JQ-slide-content li img{width:375px;height:150px;}
+.w_ctr .JQ-slide-nav{position:absolute;bottom:14px;right:8px;z-index:30;}
+.w_ctr .JQ-slide-nav li{float:left;display:inline;background:url(../images/focus_li.png) no-repeat;width:10px;height:10px;text-indent:-999em;overflow:hidden;cursor:pointer;margin-right:5px;}
+.w_ctr .JQ-slide-nav li.on{background-position:-15px 0;}

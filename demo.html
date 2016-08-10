@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>jquery特效制作多功能图片左右滚动和选项卡基于jquery插件</title>
+<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 400px)" href="css/banner.css">
+</link>
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.slide.js"></script>
+
+<script type="text/javascript">
+$(function (){
+	/* banner图片左右滚动 */
+	$(".w_ctr .JQ-slide").Slide({
+		effect:"scroolX",
+		speed:"normal",
+		timer:2000
+	});
+});
+</script>
+</head>
+
+<body>
+	<div>
+		<div class="w_ctr">
+			<div class="JQ-slide">
+				<ul class="JQ-slide-content">
+					<li><a href="http://www.17sucai.com/"><img src="images/image1.jpg" width="375" height="150" alt="恶性肿瘤疾病险" /></a>
+					</li>
+					<li><a href="http://www.17sucai.com/"><img src="images/image2.png" width="375" height="150" alt="车险" /></a></li>
+					<li><a href="http://www.17sucai.com/"><img src="images/image3.jpg" width="375" height="150" alt="个人住院医疗险" /></a></li>
+					<li><a href="http://www.17sucai.com/"><img src="images/image4.png" width="375" height="150" alt="赔碎" /></a></li>
+				</ul>
+				<ul class="JQ-slide-nav">
+					<li class="on">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
